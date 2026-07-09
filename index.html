@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alexsimon.fyi</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom terminal-inspired focus states */
+        .router-link:hover {
+            border-color: #ec4899 !important; /* Pink border */
+            color: #facc15 !important;        /* Yellow text */
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col justify-between p-6 font-sans antialiased selection:bg-pink-500 selection:text-slate-950">
+
+    <!-- Top spacing to balance vertical alignment -->
+    <div></div>
+
+    <!-- Main Card -->
+    <main class="max-w-md w-full mx-auto border border-slate-800 bg-slate-900/50 backdrop-blur-sm p-8 rounded-2xl shadow-2xl">
+        <header class="mb-8">
+            <h1 class="text-2xl font-bold tracking-tight text-white mb-1">alexsimon.fyi</h1>
+            <p class="text-sm text-slate-400">Personal hub & verification for Bluesky.</p>
+        </header>
+
+        <!-- Navigation Router Links -->
+        <nav class="space-y-3">
+            <a href="https://alexjsimon.com" 
+               class="router-link block w-full p-4 text-left rounded-xl border border-slate-800 bg-slate-900 transition-all duration-200 text-sm font-medium tracking-wide"
+               target="_blank" rel="noopener noreferrer">
+                Resume & Professional Profile
+            </a>
+            
+            <a href="https://github.com/bigjew92" 
+               class="router-link block w-full p-4 text-left rounded-xl border border-slate-800 bg-slate-900 transition-all duration-200 text-sm font-medium tracking-wide"
+               target="_blank" rel="noopener noreferrer">
+                Code & Infrastructure
+            </a>
+
+            <a href="https://makerworld.com/en/@bigjew92" 
+               class="router-link block w-full p-4 text-left rounded-xl border border-slate-800 bg-slate-900 transition-all duration-200 text-sm font-medium tracking-wide"
+               target="_blank" rel="noopener noreferrer">
+                3D Fabrication & Designs
+            </a>
+        </nav>
+    </main>
+
+    <!-- Footer: Verifies identity back to Bluesky -->
+    <footer class="text-center py-4">
+        <a href="https://bsky.app/profile/alexsimon.fyi" 
+           class="text-xs text-slate-500 hover:text-pink-500 transition-colors duration-200 tracking-wider uppercase font-semibold"
+           target="_blank" rel="noopener noreferrer">
+            ➔ @alexsimon.fyi on Bluesky
+        </a>
+    </footer>
+
+</body>
+</html>
